@@ -87,8 +87,8 @@ def main(_user, _passwd, _step):
         return "user and passwd not empty！"
 
     if _step == '':
-        print("已设置为随机步数（8999-9999）")
-        _step = str(random.randint(8999-9999))
+        print("已设置为随机步数（7000-9999）")
+        _step = str(random.randint(7000, 9999))
     login_token, userid = login(_user, password)
     if login_token == 0:
         print("登陆失败！")
