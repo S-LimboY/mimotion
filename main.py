@@ -88,7 +88,7 @@ def main(_user, _passwd, _step):
 
     if _step == '':
         print("已设置为随机步数（5000-6999）")
-        _step = str(random.randint(3000, 6999))
+        _step = str(random.randint(3000, 3999))
     login_token, userid = login(_user, password)
     if login_token == 0:
         print("登陆失败！")
